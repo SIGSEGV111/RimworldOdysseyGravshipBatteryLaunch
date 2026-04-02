@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<OGBL_NoCorePowerNet>The grav core must be connected to a power net.</OGBL_NoCorePowerNet>
+	<OGBL_GravCoreNotPowered>The grav core must be powered.</OGBL_GravCoreNotPowered>
+	<OGBL_PilotConsoleNotPowered>The active pilot console must be powered on the grav core's power net.</OGBL_PilotConsoleNotPowered>
+	<OGBL_ThrustersNotPowered>All connected thrusters must be powered on the grav core's power net: {0}/{1} ready.</OGBL_ThrustersNotPowered>
+	<OGBL_NotEnoughStoredPower>Not enough stored battery energy on the grav core's power net for takeoff: {0} / {1} available. Required footprint: {2} tiles × 100.</OGBL_NotEnoughStoredPower>
+
+	<OGBL_PrepareForLaunch>Prepare for launch</OGBL_PrepareForLaunch>
+	<OGBL_PrepareForLaunchDesc>Start charging the grav engine. This takes 2 in-game hours and consumes heavy continuous power from the grav core's power net. If power fails, the preparation is canceled and the invested energy is lost.</OGBL_PrepareForLaunchDesc>
+	<OGBL_PrepareForLaunchWarning>Preparing this gravship for launch will broadcast a clear threat signal. Any present raiders will attack immediately, and any dormant mech cluster on the map will wake up and attack. Continue?</OGBL_PrepareForLaunchWarning>
+	<OGBL_AbortPreparation>Abort launch preparation</OGBL_AbortPreparation>
+	<OGBL_AbortPreparationDesc>Shut the grav engine down and discard all current spool-up progress.</OGBL_AbortPreparationDesc>
+	<OGBL_ShutdownPreparedEngine>Shut down prepared engine</OGBL_ShutdownPreparedEngine>
+	<OGBL_ShutdownPreparedEngineDesc>Discharge the prepared grav engine and return it to the idle state.</OGBL_ShutdownPreparedEngineDesc>
+
+	<OGBL_PreparationStarted>Gravship engine preparation started. Estimated duration: {0}.</OGBL_PreparationStarted>
+	<OGBL_PreparationAlreadyInProgress>This grav engine is already preparing for launch.</OGBL_PreparationAlreadyInProgress>
+	<OGBL_AlreadyPrepared>This grav engine is already fully prepared for launch.</OGBL_AlreadyPrepared>
+	<OGBL_PreparationProgress>Engine spool-up at {0}%.</OGBL_PreparationProgress>
+	<OGBL_PreparationComplete>Gravship engine fully prepared. Standard launch is now available.</OGBL_PreparationComplete>
+	<OGBL_PreparationInspect>Engine spool-up: {0}% complete ({1}h remaining).</OGBL_PreparationInspect>
+	<OGBL_PreparedInspect>Engine fully prepared for launch.</OGBL_PreparedInspect>
+	<OGBL_EnginePreparingInspect>Spool-up charge: {0}% complete. Extra draw: {1} W.</OGBL_EnginePreparingInspect>
+	<OGBL_EnginePreparedInspect>Engine prepared. Maintaining spool-up charge. Extra draw: {0} W.</OGBL_EnginePreparedInspect>
+
+	<OGBL_EngineNotPrepared>The grav engine is not prepared. Use Prepare for launch first.</OGBL_EngineNotPrepared>
+	<OGBL_EngineSpooling>The grav engine is still spooling up: {0}% complete.</OGBL_EngineSpooling>
+
+	<OGBL_PreparationCanceledAfterLoad>Pending gravship engine preparations were canceled after loading the save.</OGBL_PreparationCanceledAfterLoad>
+	<OGBL_PreparationCanceledManual>Gravship engine preparation canceled.</OGBL_PreparationCanceledManual>
+	<OGBL_PreparationCanceledCorePower>Gravship engine preparation canceled: the grav core lost power and the invested energy was lost.</OGBL_PreparationCanceledCorePower>
+	<OGBL_PreparationCanceledConsolePower>Gravship engine preparation canceled: the pilot console lost power and the invested energy was lost.</OGBL_PreparationCanceledConsolePower>
+</LanguageData>

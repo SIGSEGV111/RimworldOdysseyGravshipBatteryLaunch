@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<JobDef>
+		<defName>OGBL_GravshipSpoolUp</defName>
+		<driverClass>OdysseyGravshipBatteryLaunch.JobDriver_GravshipSpoolUp</driverClass>
+		<reportString>spooling up the gravship engines.</reportString>
+		<playerInterruptible>true</playerInterruptible>
+		<casualInterruptible>false</casualInterruptible>
+		<checkOverrideOnExpire>true</checkOverrideOnExpire>
+		<alwaysShowWeapon>false</alwaysShowWeapon>
+		<suspendable>false</suspendable>
+		<collideWithPawns>true</collideWithPawns>
+	</JobDef>
+</Defs>

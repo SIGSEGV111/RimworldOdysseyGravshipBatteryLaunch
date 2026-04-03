@@ -1,7 +1,7 @@
 using HarmonyLib;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch;
+namespace GravshipRewired;
 
 /// <summary>
 /// RimWorld loads all classes marked with <see cref="StaticConstructorOnStartup"/> during game startup.
@@ -21,7 +21,7 @@ public static class ModBootstrap
 	{
 		// The string is the Harmony id. It should be stable and globally unique so other mods and
 		// log output can identify which patch owner made a change.
-		var harmony = new Harmony("openai.odysseygravshipbatterylaunch");
+		var harmony = new Harmony("sigsegv111.realrim.gravshiprewired");
 
 		// PatchAll() scans this assembly for [HarmonyPatch] attributes and installs every patch.
 		harmony.PatchAll();

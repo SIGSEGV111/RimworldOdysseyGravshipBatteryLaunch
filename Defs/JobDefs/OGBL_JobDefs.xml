@@ -2,7 +2,7 @@
 <Defs>
 	<JobDef>
 		<defName>OGBL_GravshipSpoolUp</defName>
-		<driverClass>OdysseyGravshipBatteryLaunch.JobDriver_GravshipSpoolUp</driverClass>
+		<driverClass>GravshipRewired.JobDriver_GravshipSpoolUp</driverClass>
 		<reportString>spooling up the gravship engines.</reportString>
 		<playerInterruptible>true</playerInterruptible>
 		<casualInterruptible>false</casualInterruptible>

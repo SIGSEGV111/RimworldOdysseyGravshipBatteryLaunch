@@ -9,7 +9,7 @@ using Verse;
 using Verse.AI;
 using Verse.AI.Group;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// Shared helper methods for the mod.
@@ -259,7 +259,7 @@ namespace OdysseyGravshipBatteryLaunch
 				return;
 			}
 
-			Log.Warning("[OdysseyGravshipBatteryLaunch] Could not set CompPowerTrader power output.");
+			Log.Warning("[RealRim GravshipRewired] Could not set CompPowerTrader power output.");
 		}
 
 		/// <summary>
@@ -308,7 +308,7 @@ namespace OdysseyGravshipBatteryLaunch
 
 			if (remaining_energy > 0.1f)
 			{
-				Log.Warning($"[OdysseyGravshipBatteryLaunch] Launch energy shortfall after draw attempt: {remaining_energy:0.##}.");
+				Log.Warning($"[RealRim GravshipRewired] Launch energy shortfall after draw attempt: {remaining_energy:0.##}.");
 			}
 		}
 
@@ -519,7 +519,7 @@ namespace OdysseyGravshipBatteryLaunch
 				}
 			}
 
-			Log.Warning("[OdysseyGravshipBatteryLaunch] Could not read CompPowerBattery stored energy. Assuming 0.");
+			Log.Warning("[RealRim GravshipRewired] Could not read CompPowerBattery stored energy. Assuming 0.");
 			return 0f;
 		}
 
@@ -556,7 +556,7 @@ namespace OdysseyGravshipBatteryLaunch
 				return;
 			}
 
-			Log.Warning("[OdysseyGravshipBatteryLaunch] Could not modify CompPowerBattery stored energy.");
+			Log.Warning("[RealRim GravshipRewired] Could not modify CompPowerBattery stored energy.");
 		}
 
 		/// <summary>

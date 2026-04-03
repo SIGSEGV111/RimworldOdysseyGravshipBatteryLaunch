@@ -1,7 +1,7 @@
 using RimWorld;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// RimWorld's XML defs are usually referenced by string in data files, but from C# you almost

@@ -2,7 +2,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// Adds preparation status to the grav engine itself.

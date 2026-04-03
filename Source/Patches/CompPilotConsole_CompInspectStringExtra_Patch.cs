@@ -2,7 +2,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// Adds preparation status text to the pilot console's inspect pane.

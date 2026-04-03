@@ -4,7 +4,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// Helper for reading the ritual's behavior worker in a version-tolerant way.

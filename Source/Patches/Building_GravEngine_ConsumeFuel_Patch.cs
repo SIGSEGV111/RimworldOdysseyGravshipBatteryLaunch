@@ -2,7 +2,7 @@ using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// The earlier mod versions drew a one-time battery charge when launch actually happened.

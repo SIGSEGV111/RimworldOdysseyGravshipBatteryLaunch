@@ -4,7 +4,7 @@ using System.Linq;
 using RimWorld;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// Despite the historic type name, this class now manages the grav-engine preparation state,
@@ -205,21 +205,15 @@ namespace OdysseyGravshipBatteryLaunch
 				state.progress_ticks++;
 				LaunchWarmupVisuals.tickWarmupVisuals(state);
 
-				if (current_tick - state.last_status_tick >= GravshipBatteryUtility.SPOOL_STATUS_MESSAGE_INTERVAL_TICKS)
-				{
-					state.last_status_tick = current_tick;
-					Messages.Message(
-						"OGBL_PreparationProgress".Translate(state.getPercentComplete().ToString("0")).CapitalizeFirst(),
-						state.console,
-						MessageTypeDefOf.SilentInput,
-						false);
-				}
-
 				if (state.progress_ticks >= GravshipBatteryUtility.SPOOL_UP_TICKS)
 				{
 					state.phase = GravshipPreparationPhase.Spooled;
 					state.completed_tick = current_tick;
-					Messages.Message("OGBL_PreparationComplete".Translate().CapitalizeFirst(), state.console, MessageTypeDefOf.TaskCompletion, false);
+					Find.LetterStack.ReceiveLetter(
+						"OGBL_PreparationCompleteLabel".Translate().CapitalizeFirst(),
+						"OGBL_PreparationComplete".Translate().CapitalizeFirst(),
+						LetterDefOf.PositiveEvent,
+						state.engine);
 				}
 
 				return true;

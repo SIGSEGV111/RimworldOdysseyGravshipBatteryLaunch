@@ -3,7 +3,7 @@ using Verse;
 using Verse.AI;
 using RimWorld;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// A JobDriver is RimWorld's state machine for a pawn job.

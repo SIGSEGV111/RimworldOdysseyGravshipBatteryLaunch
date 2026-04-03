@@ -2,7 +2,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	internal static class GravshipLaunchInteractionGuard
 	{

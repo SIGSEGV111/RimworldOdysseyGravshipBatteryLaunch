@@ -1,7 +1,7 @@
 using HarmonyLib;
 using RimWorld;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// Makes powered state part of a thruster's "can be active" decision.

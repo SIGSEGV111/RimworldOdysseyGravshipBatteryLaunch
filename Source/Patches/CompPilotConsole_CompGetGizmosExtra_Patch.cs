@@ -3,7 +3,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// Adds explicit preparation/shutdown gizmos to the pilot console.

@@ -1,1 +1,4 @@
 Source/obj
+**/Assemblies
+**.dll
+*.orig

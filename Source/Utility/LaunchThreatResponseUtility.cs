@@ -5,7 +5,7 @@ using RimWorld;
 using Verse;
 using Verse.AI.Group;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// Reacts to gravship spool-up by making nearby large-scale threats stop waiting and engage now.
@@ -48,7 +48,7 @@ namespace OdysseyGravshipBatteryLaunch
 			}
 			catch (Exception exception)
 			{
-				Log.Error($"[OdysseyGravshipBatteryLaunch] Failed to escalate hostile threats on gravship spool-up: {exception}");
+				Log.Error($"[RealRim GravshipRewired] Failed to escalate hostile threats on gravship spool-up: {exception}");
 			}
 		}
 

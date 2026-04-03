@@ -17,7 +17,7 @@
 	<OGBL_PreparationStarted>Gravship engine preparation started. Estimated duration: {0}.</OGBL_PreparationStarted>
 	<OGBL_PreparationAlreadyInProgress>This grav engine is already preparing for launch.</OGBL_PreparationAlreadyInProgress>
 	<OGBL_AlreadyPrepared>This grav engine is already fully prepared for launch.</OGBL_AlreadyPrepared>
-	<OGBL_PreparationProgress>Engine spool-up at {0}%.</OGBL_PreparationProgress>
+	<OGBL_PreparationCompleteLabel>Grav engine fully charged</OGBL_PreparationCompleteLabel>
 	<OGBL_PreparationComplete>Gravship engine fully prepared. Standard launch is now available.</OGBL_PreparationComplete>
 	<OGBL_PreparationInspect>Engine spool-up: {0}% complete ({1}h remaining).</OGBL_PreparationInspect>
 	<OGBL_PreparedInspect>Engine fully prepared for launch.</OGBL_PreparedInspect>

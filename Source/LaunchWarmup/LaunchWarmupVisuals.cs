@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
+using UnityEngine;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// Visual helper for the grav-engine preparation state.
@@ -20,7 +21,8 @@ namespace OdysseyGravshipBatteryLaunch
 		private const int SMOKE_INTERVAL_TICKS = 18;
 		private const int GLOW_INTERVAL_TICKS = 30;
 		private const int SMOKE_SAMPLES_PER_BURST = 3;
-		private const float CORE_GLOW_SIZE = 0.9f;
+		private const float MIN_CORE_GLOW_SIZE = 0.35f;
+		private const float MAX_CORE_GLOW_SIZE = 1.05f;
 
 		public static void tickWarmupVisuals(GravshipWarmupState state)
 		{
@@ -37,7 +39,7 @@ namespace OdysseyGravshipBatteryLaunch
 
 			if (current_tick % GLOW_INTERVAL_TICKS == 0)
 			{
-				emitCoreGlow(state.engine);
+				emitCoreGlow(state.engine, state.getPercentComplete() / 100f);
 			}
 		}
 
@@ -50,7 +52,7 @@ namespace OdysseyGravshipBatteryLaunch
 
 			if (Find.TickManager.TicksGame % GLOW_INTERVAL_TICKS == 0)
 			{
-				emitCoreGlow(state.engine);
+				emitCoreGlow(state.engine, 1f);
 			}
 		}
 
@@ -71,11 +73,14 @@ namespace OdysseyGravshipBatteryLaunch
 			}
 		}
 
-		private static void emitCoreGlow(Building_GravEngine grav_engine)
+		private static void emitCoreGlow(Building_GravEngine grav_engine, float charge_fraction)
 		{
+			float clamped_fraction = Mathf.Clamp01(charge_fraction);
+			float glow_size = Mathf.Lerp(MIN_CORE_GLOW_SIZE, MAX_CORE_GLOW_SIZE, clamped_fraction);
+
 			foreach (IntVec3 cell in grav_engine.OccupiedRect())
 			{
-				FleckMaker.ThrowHeatGlow(cell, grav_engine.Map, CORE_GLOW_SIZE);
+				FleckMaker.ThrowHeatGlow(cell, grav_engine.Map, glow_size);
 			}
 		}
 	}

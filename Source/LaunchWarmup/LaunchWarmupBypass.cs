@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// The warmup flow works by intercepting the normal Odyssey launch ritual, delaying it for

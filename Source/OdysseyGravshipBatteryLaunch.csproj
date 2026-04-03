@@ -3,11 +3,12 @@
 		<TargetFramework>net48</TargetFramework>
 		<LangVersion>preview</LangVersion>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<AssemblyName>GravshipRewired</AssemblyName>
 		<OutputPath>..\1.6\Assemblies\</OutputPath>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 		<DebugType>portable</DebugType>
-		<RootNamespace>$(MSBuildProjectName.Replace(" ", "."))</RootNamespace>
+		<RootNamespace>GravshipRewired</RootNamespace>
 	</PropertyGroup>
 
 	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

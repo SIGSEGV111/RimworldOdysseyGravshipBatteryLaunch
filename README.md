@@ -1,6 +1,9 @@
-# Odyssey Gravship Battery Launch
+# [RealRim] GravshipRewired
 
-A RimWorld 1.6 + Odyssey Harmony add-on that makes gravships depend on electrical power and a separate engine-preparation phase before launch.
+A RimWorld 1.6 + Odyssey Harmony add-on in the RealRim series that makes gravships depend on electrical power and a separate engine-preparation phase before launch.
+
+- GitHub: https://github.com/SIGSEGV111/RealRimGravshipRewired
+- License: AGPL-3.0
 
 ## Current behavior
 
@@ -30,7 +33,8 @@ During spool-up:
 - spool-up takes **2 in-game hours**;
 - spool-up consumes continuous extra power from the grav core's power net;
 - the grav engine inspect string shows spool progress;
-- periodic messages report progress in percent;
+- grav-core glow becomes brighter as spool charge rises;
+- a completion notification is shown once the core is fully charged;
 - confirming **Prepare for launch** shows a warning because this action immediately escalates local threats.
 
 ### Spool-up power cost
@@ -75,6 +79,8 @@ At that point, clicking **Launch** uses Odyssey's normal flow:
 
 This mod no longer tries to pause and later resume the gravship ritual. The engine-preparation phase is separate, and the actual launch remains standard Odyssey behavior.
 
+Odyssey's built-in grav-engine post-launch cooldown is also removed, so a prepared ship can launch again immediately as long as it is powered and prepared.
+
 ## Inspect text
 
 The grav engine and pilot console display launch-readiness state in inspect text, including whether the ship is:
@@ -108,7 +114,6 @@ Assembly output target:
 - The project uses `Lib.Harmony`, `Krafs.Rimworld.Ref`, and `Krafs.Publicizer`.
 - The current source reflects the reduced baseline power values listed above.
 - Manual on/off toggles for individual gravship parts are **not** implemented in this version.
-- Before publishing, change the `author` and `packageId` values in `About/About.xml`.
 
 ## Code tour
 

@@ -2,7 +2,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OdysseyGravshipBatteryLaunch
+namespace GravshipRewired
 {
 	/// <summary>
 	/// This patch used to divert the actual Odyssey launch ritual into a delayed warmup sequence.
